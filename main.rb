@@ -68,7 +68,7 @@ def acchihoi_loser
   
   p "相手の手は#{hands[program]}, あなたは#{hands[player]}を向きました。"
   p "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-  if player < 0 || player >= 4
+  if player < 0 || 4 <= player
     p "終わりです。お疲れ様です。"
     return
   elsif player == program
